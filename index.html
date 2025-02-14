@@ -9,6 +9,10 @@
 </head>
 <body>
     <div class="container">
+        <div class="item item-1">
+            <p>1</p>
+        </div>
+        <div class="item item-2">
         <div class="valentines">
             <div class="envelope"></div>
             <div class="front"></div>
@@ -25,7 +29,45 @@
             </div>
         </div>
         <div class="shadow"></div>
-    </div>
+        </div>
     <script src="js.js"></script>
+    <div class="item item-3">
+        <p>3</p>
+    </div>
+    <div class="item item-4">
+        <p>4</p>
+    </div>
+    <div class="item item-5">
+            <img src="src/images/l1.jpg" class="img">
+            <img src="src/images/l2.jpg" class="img">
+            <img src="src/images/l4.jpg" class="img">
+            <img src="src/images/l5.jpg" class="img">
+            <img src="src/images/l10.jpg" class="img">
+            <img src="src/images/l11.jpg" class="img">
+            <img src="src/images/l12.jpg" class="img">
+            <img src="src/images/l13.jpg" class="img">
+        </div>
+        <script>
+            let images = document.querySelectorAll('.img');
+            let index = 0;
+        
+            function updateClasses() {
+                images.forEach((b, i) => {
+                    let className = i < index ? 'prev' : i === index ? 'hov' : 'next';
+                    b.classList.remove('prev', 'next', 'hov');
+                    b.classList.add(className);
+                });
+        
+                index = (index + 1) % images.length; // หมุน index ไปเรื่อยๆ
+            }
+        
+            setInterval(updateClasses, 2000); // อัปเดตทุก 2 วินาที
+        </script>
+    </div>
+    </div>
+
+    
+   
 </body>
+
 </html>
