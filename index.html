@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine's Card</title>
+
+    <script src="https://kit.fontawesome.com/b59faafd5c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 </head>
-<body>
+<body class="gradient-bg">
     <div class="container">
         <div class="item item-1">
-            <p>1</p>
+            <p>...To my little cow 
+                <i class="fa-solid fa-heart" style="font-size: 40px; color: red;">
+                </i></p>
         </div>
-        <div class="item item-2">
+        <div class="item item-3">
         <div class="valentines">
             <div class="envelope"></div>
             <div class="front"></div>
@@ -31,38 +39,50 @@
         <div class="shadow"></div>
         </div>
     <script src="js.js"></script>
-    <div class="item item-3">
-        <p>3</p>
-    </div>
-    <div class="item item-4">
-        <p>4</p>
-    </div>
-    <div class="item item-5">
-            <img src="src/images/l1.jpg" class="img">
-            <img src="src/images/l2.jpg" class="img">
-            <img src="src/images/l4.jpg" class="img">
-            <img src="src/images/l5.jpg" class="img">
-            <img src="src/images/l10.jpg" class="img">
-            <img src="src/images/l11.jpg" class="img">
-            <img src="src/images/l12.jpg" class="img">
-            <img src="src/images/l13.jpg" class="img">
+    <div class="item item-2">
+        <div class="rose">
+            <div class="flower">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+            </div>
+            <div class="leaf">
+                <div class="stem"></div>
+                <div class="leafs"></div>
+                <div class="leafs"></div>
+            </div>
         </div>
-        <script>
-            let images = document.querySelectorAll('.img');
-            let index = 0;
-        
-            function updateClasses() {
-                images.forEach((b, i) => {
-                    let className = i < index ? 'prev' : i === index ? 'hov' : 'next';
-                    b.classList.remove('prev', 'next', 'hov');
-                    b.classList.add(className);
-                });
-        
-                index = (index + 1) % images.length; // หมุน index ไปเรื่อยๆ
-            }
-        
-            setInterval(updateClasses, 2000); // อัปเดตทุก 2 วินาที
-        </script>
+    </div>
+    <!-- <div class="item item-4"> -->
+        <div class="popup-message">
+            <h1>Happy birthday to us! 🎉</h1>
+            <pre>       Happy belated birthday! Now that I'm writing this, it's 2/15/2025.
+Sorry for being so chubby.Thank you, CusCus, for being with LotLot.
+    There are so many things, huh? I don't know how to write them. 
+It feels good to have nothing to write and nothing to keep.Because every day,
+    you listen to me. I want to tell you that I love CusCus a lot.
+    I intend to do this for you instead of a bouquet of flowers.<p><a href="https://drive.google.com/file/d/1j9sZrH6oPtd9dC14AVLRxaG9xBpCZLUo/view?usp=drive_link" target="_blank">Dear my lover</a></p></pre>   
+
+     
+        </div>
+        <div class="lightbox">
+            <span class="close">&times;</span>
+            <img src="" id="lightbox-img">
+            <div class="description" id="lightbox-desc"></div>
+            
+        </div>
+    <!-- </div> -->
+    <div class="item item-5">
+            <img src="src/images/1 (1).jpg" class="img">
+            <img src="src/images/1 (2).jpg" class="img">
+            <img src="src/images/1 (5).jpg" class="img">
+            <img src="src/images/1 (7).jpg" class="img">
+            <img src="src/images/1 (9).jpg" class="img">
+            <img src="src/images/1 (10).jpg" class="img">
+            <img src="src/images/1 (11).jpg" class="img">
+        </div>
     </div>
     </div>
 
