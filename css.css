@@ -12,21 +12,24 @@ body{
 }
 
 
-p, h1{
+p, h3{
     font-family: "Caveat", serif;
     font-optical-sizing: auto;
     font-weight: bolder;
     font-size: 50px;
     font-style: normal;
+    line-height: 0.8;
 }
 p{
     padding-top: -50px;
     text-align: right;
+    line-height: 0.8;
 }
 pre{
     font-optical-sizing: auto;
     font-family: "Caveat", serif;
     font-size: 30px;
+    
 }
 .container {
     position: relative;
